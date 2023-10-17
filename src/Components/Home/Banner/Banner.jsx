@@ -1,5 +1,5 @@
 import React from 'react'
-import BgImage from '../../../../public/assets/banner-image/mike-petrucci-c9FQyqIECds-unsplash.jpg'
+import BgImage from '../../../../public/assets/banner-image/lum3n--RBuQ2PK_L8-unsplash.jpg'
 // import Marquee from "react-fast-marquee";
 import { Link } from 'react-router-dom';
 import { BsTelephoneFill, BsSearch } from 'react-icons/bs';
@@ -7,7 +7,7 @@ import { BiMicrophone } from 'react-icons/bi';
 
 const Banner = () => {
   return (
-      <div className='max-h-screen -mt-[118px] lg:-mt-[193px] w-full top-0 bg-[#e5e3e3] bg-blend-overlay bg-opacity-99'
+      <div className='max-h-screen -mt-[118px] lg:-mt-[193px] w-full top-0 bg-[#ffffff] bg-blend-overlay bg-opacity-60'
           style={{
               backgroundImage: `url(${BgImage})`, backgroundSize: 'cover',
               backgroundPosition: 'center',
@@ -18,7 +18,7 @@ const Banner = () => {
                   <button className='btn bg-transparent btn-outline absolute left-0 outline-none border-none'>
                       <BiMicrophone className='text-2xl text-black font-thin' />
                   </button>
-                  <input type="text" className='px-10 bg-transparent text-lg font-thin w-full text-black placeholder:text-black' placeholder='Search here our package and choose your best' />
+                  <input type="text" className='px-10 bg-transparent text-lg font-thin w-full text-black placeholder:text-black' placeholder='Search your best brand' />
                   <button className='btn bg-transparent btn-outline absolute right-0 outline-none border-none'>
                       <BsSearch className='text-2xl text-black font-thin' />
                   </button>
