@@ -1,0 +1,47 @@
+[
+    {
+        "id": 1,
+        "brand": "Apple",
+        "image_name": "https://i.ibb.co/PCRrBKL/Apple-Logo-1977.png"
+    },
+    {
+        "id": 2,
+        "brand": "Samsung",
+        "image_name": "https://i.ibb.co/0GD6GRD/samsung-logo-PNG12.png"
+    },
+    {
+        "id": 3,
+        "brand": "Sony",
+        "image_name": "https://i.ibb.co/fnmb4Rg/Sony-Logo-1957.png"
+    },
+    {
+        "id": 4,
+        "brand": "Microsoft",
+        "image_name": "https://i.ibb.co/Kw1yvbm/microsoft-logo-png-2395.png"
+    },
+    {
+        "id": 5,
+        "brand": "LG",
+        "image_name": "https://i.ibb.co/Bf49rbb/png-transparent-lg-logo-lg-g5-lg-electronics-lg-corp-lg-logo-text-trademark-logo.png"
+    },
+    {
+        "id": 6,
+        "brand": "HP",
+        "image_name": "https://i.ibb.co/4Rthj2k/HP-logo-630x630.png"
+    },
+    {
+        "id": 7,
+        "brand": "Lenovo",
+        "image_name": "https://i.ibb.co/wzhbL3h/png-clipart-logo-brand-lenovo-thinkpad-ideapad-strategic-blue-text.png"
+    },
+    {
+        "id": 8,
+        "brand": "Google",
+        "image_name": "https://i.ibb.co/gyhGs4B/Colorful-google-logo-design-on-transparent-PNG-1.png"
+    },
+    {
+        "id": 9,
+        "brand": "Intel",
+        "image_name": "https://i.ibb.co/sq12BYK/intel-blue-text-trademark-thumbnail.png"
+    }
+]
