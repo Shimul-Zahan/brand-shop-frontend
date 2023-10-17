@@ -6,7 +6,7 @@ const Navbar = () => {
     return (
         <div className="navbar container py-8 mx-auto z-10 relative">
             <div className="navbar-start">
-                <Link to='/' className="hidden lg:block text-3xl">OPEN Shop</Link>
+                <Link to='/' className="hidden lg:block text-3xl text-white">OPEN Shop</Link>
                 <div className="lg:hidden dropdown">
                     <label tabIndex={0} className="btn btn-ghost btn-circle">
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
@@ -28,7 +28,7 @@ const Navbar = () => {
             </div>
             <div className="navbar-end space-x-5">
                 <div>
-                    <h1 className="hidden lg:block text-xl">Shimul</h1>
+                    <h1 className="hidden lg:block text-xl text-white">Shimul</h1>
                 </div>
                 <div className="dropdown dropdown-end">
                     <label tabIndex={0} className="btn btn-ghost btn-circle avatar">

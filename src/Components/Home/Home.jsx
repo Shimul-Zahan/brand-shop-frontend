@@ -1,8 +1,9 @@
 import React from 'react'
-import Navbar from './Navbar/Navbar'
 import Banner from './Banner/Banner'
 import Brand from './Brand/Brand'
 import { useLoaderData } from 'react-router-dom'
+import Trade from './Trade/Trade'
+import WhyChooseUs from './WhyChooseUs/WhyChooseUs'
 
 const Home = () => {
 
@@ -13,6 +14,8 @@ const Home = () => {
         <div className=''>
             <Banner />
             <Brand brands={brands} />
+            <Trade />
+            <WhyChooseUs />
         </div>
     )
 }
