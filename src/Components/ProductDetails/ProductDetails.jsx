@@ -1,6 +1,8 @@
 import React from 'react'
 import Navbar from '../Home/Navbar/Navbar'
 import { Link, useLoaderData } from 'react-router-dom'
+import Swal from 'sweetalert2'
+
 
 const ProductDetails = () => {
 
@@ -17,7 +19,13 @@ const ProductDetails = () => {
             body: JSON.stringify(product),
         })
             .then(res => res.json())
-            .then(data => console.log(data))
+            .then(data => 
+                Swal.fire(
+                    'Good job!',
+                    'You clicked the button!',
+                    'success'
+                )    
+            )
     }
 
     return (

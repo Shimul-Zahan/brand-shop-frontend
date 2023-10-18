@@ -1,5 +1,7 @@
 import React from 'react'
 import Navbar from '../Home/Navbar/Navbar'
+import Swal from 'sweetalert2'
+
 
 const AddProduct = () => {
 
@@ -25,7 +27,16 @@ const AddProduct = () => {
             body: JSON.stringify(product),
         })
             .then(res => res.json())
-            .then(data => console.log(data))
+            .then(data =>
+                {
+                form.reset()
+                    Swal.fire(
+                        'Successfully!',
+                        'Product added successfully!',
+                        'success'
+                    )
+                }
+            )
 
     }
 
