@@ -1,7 +1,7 @@
 import React, { useContext, useState } from 'react'
 import { AiFillGithub, AiFillGoogleCircle, AiOutlineGoogle } from 'react-icons/ai';
 import { BsFacebook, BsArrowLeft } from 'react-icons/bs';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import Navbar from '../Components/Home/Navbar/Navbar';
 import { MyContext } from '../Auth/AuthProvider';
 
@@ -10,7 +10,8 @@ const Login = () => {
 
     const navigate = useNavigate()
     const [error, setError] = useState(null);
-    const { logIn, googleLogin }=useContext(MyContext)
+    const { logIn, googleLogin } = useContext(MyContext)
+    const location = useLocation();
 
     const handleLogin = (e) => {
 
@@ -22,7 +23,7 @@ const Login = () => {
         logIn(email, password)
             .then(res => {
                 form.reset();
-                navigate('/');
+                location.state ? navigate(location.state) : navigate('/');
             })
             .catch(err => {
                 setError(err.message.slice(9, 100));
@@ -31,7 +32,7 @@ const Login = () => {
 
     const LogInByGoogle = () => {
         googleLogin()
-            .then(res => console.log(res.user))
+            .then(res => location.state ? navigate(location.state) : navigate('/'))
             .catch(err => setError(err.message.slice(9, 100)))
     }
 

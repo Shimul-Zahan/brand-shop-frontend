@@ -26,8 +26,8 @@ const Navbar = () => {
                     </label>
                     <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-black">
                         <li><NavLink to='/'>Home</NavLink></li>
-                        <li><NavLink to=''>Add Product</NavLink></li>
-                        <li><NavLink to=''>My Cart</NavLink></li>
+                        <li><NavLink to='/addProduct'>Add Product</NavLink></li>
+                        <li><NavLink to='/myCart'>My Cart</NavLink></li>
                     </ul>
                 </div>
             </div>
