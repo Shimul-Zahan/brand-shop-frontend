@@ -41,7 +41,7 @@ const ProductDetails = () => {
                 </div>
                 <div className='text-xl space-y-4'>
                     <div className="flow-root rounded-lg border border-gray-100 py-3 shadow-sm">
-                        <dl className="-my-3 divide-y divide-gray-100 text-sm">
+                        <dl className="-my-3 divide-y divide-gray-100 text-xl">
                             <div
                                 className="grid grid-cols-1 gap-1 p-3 even:bg-gray-50 sm:grid-cols-3 sm:gap-4"
                             >
@@ -89,8 +89,8 @@ const ProductDetails = () => {
                     </div>
                     <div className='flex justify-start items-center gap-5 lg:pt-10'>
                         <h1 onClick={addToCart} className='rounded-full border-2 cursor-pointer border-black w-52 p-2 flex justify-center items-center'>Add to cart</h1>
-                        <Link to='/'>
-                            <h1 className='rounded-full border-2 cursor-pointer border-black w-52 p-2 flex justify-center items-center'>Back to home</h1>
+                        <Link to={`/update/${product?._id}`}>
+                            <h1 className='rounded-full border-2 cursor-pointer border-black w-52 p-2 flex justify-center items-center'>Update Product</h1>
                         </Link>
                     </div>
                 </div>

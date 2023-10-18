@@ -25,14 +25,22 @@ const Products = () => {
                                 />
 
                                 <div className="mt-2">
-                                    <dl>
-                                        <div>
+                                    <dl className='space-y-1'>
+                                        <div className='flex justify-between items-center'>
                                             {/* <dt className="sr-only">Price</dt> */}
                                             <h1 className="text-lg text-gray-500">{product?.price}৳</h1>
+                                            <Link to={`/details/${product._id}`} className='flex justify-end items-center gap-2'>
+                                                <div className="mt-1.5 sm:mt-0 border-2 border-black py-1 px-2 rounded-full hover:bg-[red] hover:text-white">
+                                                    <p className="font-medium text-lg">Details</p>
+                                                </div>
+                                            </Link>
                                         </div>
 
                                         <div>
                                             <h1 className="font-medium text-xl">{product?.name}</h1>
+                                        </div>
+                                        <div>
+                                            <h1 className="font-medium text-base">{product?.description}</h1>
                                         </div>
                                     </dl>
 
@@ -102,28 +110,7 @@ const Products = () => {
                                                 <p className="font-medium text-base">{product?.category}</p>
                                             </div>
                                         </div>
-                                        <div className="sm:inline-flex sm:shrink-0 sm:items-center sm:gap-2">
-                                            <svg
-                                                className="h-4 w-4 text-indigo-700"
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                fill="none"
-                                                viewBox="0 0 24 24"
-                                                stroke="currentColor"
-                                            >
-                                                <path
-                                                    strokeLinecap="round"
-                                                    strokeLinejoin="round"
-                                                    strokeWidth="2"
-                                                    d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
-                                                />
-                                            </svg>
-
-                                            <Link to={`/details/${product._id}`}>
-                                                <div className="mt-1.5 sm:mt-0">
-                                                    <p className="font-medium text-base">Details</p>
-                                                </div>
-                                            </Link>
-                                        </div>
+                                        
                                     </div>
                                 </div>
                             </div>
