@@ -8,6 +8,7 @@ import Error from '../Error/Error';
 import AddProduct from '../AddProduct/AddProduct';
 import Products from '../Products/Products';
 import ProductDetails from '../ProductDetails/ProductDetails';
+import CartItem from '../CartItem/CartItem';
 
 const router = createBrowserRouter([
     {
@@ -27,7 +28,7 @@ const router = createBrowserRouter([
             {
                 path: '/brand/:brand_name',
                 element: <Products />,
-                loader: ({ params }) => fetch(`http://localhost:5000/brand/${params.brand_name}`)
+                loader: ({ params }) =>fetch(`http://localhost:5000/brand/${params.brand_name}`)
             },
             {
                 path: '/details/:id',
@@ -36,8 +37,8 @@ const router = createBrowserRouter([
             },
             {
                 path: '/myCart',
-                element: <ProductDetails />,
-                loader: () => fetch(`http://localhost:5000/carts`)
+                element: <CartItem />,
+                loader: () => fetch('http://localhost:5000/carts')
             },
         ]
     }
