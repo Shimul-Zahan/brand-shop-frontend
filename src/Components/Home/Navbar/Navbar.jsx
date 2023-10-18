@@ -1,8 +1,18 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import './navbar.css'
+import { MyContext } from '../../../Auth/AuthProvider'
 
 const Navbar = () => {
+
+    const { user, logOut } = useContext(MyContext);
+
+    const logOutUser = () => {
+        logOut()
+            .then(res => console.log("Successfully login"))
+            .catch(err=> console.log(err.message))
+    }
+
     return (
         <div className="navbar container py-8 mx-auto z-10 relative">
             <div className="navbar-start">
@@ -31,30 +41,30 @@ const Navbar = () => {
             </div>
             <div className="navbar-end space-x-5">
                 <div>
-                    <h1 className="hidden lg:block text-xl text-white">Shimul</h1>
+                    <h1 className="hidden lg:block text-xl text-white">{ user?.displayName }</h1>
                 </div>
                 <div className="dropdown dropdown-end">
                     <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
                         <div className="w-10 rounded-full border-2 input-bordered border-black">
-                            <img src="" />
+                            <img src={ user?.photoURL } />
                         </div>
                     </label>
                     <ul tabIndex={0} className="menu lg:hidden menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
                         <li><Link to='#'>Shimul</Link></li>
-                        {/* {
+                        {
                             user ?
                                 <li onClick={logOutUser}><Link>Logout</Link></li> :
                                 <li><Link to='/login'>Login</Link></li>
-                        } */}
+                        }
                     </ul>
                 </div>
-                {/* {
+                {
                     user ?
                         <button onClick={logOutUser} className='hidden md:block btn bg-yellow-500 text-black font-thin px-8 hover:bg-yellow-500'>Logout</button> :
                         <Link to='/login'>
                             <button className='hidden md:block btn bg-yellow-500 text-black font-thin px-8 hover:bg-yellow-500'>Login</button>
                         </Link>
-                } */}
+                }
 
             </div>
         </div>
