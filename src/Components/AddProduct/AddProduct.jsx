@@ -11,11 +11,21 @@ const AddProduct = () => {
         const price = form.price.value;
         const rating = form.rating.value;
         const category = form.category.value;
-        const brand_name = form.brand_name.value;
+        const brand_name = form.brand_name.value.toLowerCase();
         const description = form.description.value;
 
         const product = { name, image, price, brand_name, category, rating, description }
-        console.log(product)
+        // console.log(product)
+
+        fetch('http://localhost:5000/products', {
+            method: "POST",
+            headers: {
+                'content-type': 'application/json',
+            },
+            body: JSON.stringify(product),
+        })
+            .then(res => res.json())
+            .then(data => console.log(data))
 
     }
 

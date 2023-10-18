@@ -2,41 +2,49 @@
     {
         "id": 1,
         "brand": "Apple",
+        "brand_name": "Apple",
         "image_name": "https://i.ibb.co/PCRrBKL/Apple-Logo-1977.png"
     },
     {
         "id": 2,
         "brand": "Samsung",
+        "brand_name": "Samsung",
         "image_name": "https://i.ibb.co/0GD6GRD/samsung-logo-PNG12.png"
     },
     {
         "id": 3,
         "brand": "Sony",
+        "brand_name": "Sony",
         "image_name": "https://i.ibb.co/fnmb4Rg/Sony-Logo-1957.png"
     },
     {
         "id": 4,
         "brand": "Microsoft",
+        "brand_name": "Microsoft",
         "image_name": "https://i.ibb.co/Kw1yvbm/microsoft-logo-png-2395.png"
     },
     {
         "id": 6,
         "brand": "HP",
+        "brand_name": "HP",
         "image_name": "https://i.ibb.co/4Rthj2k/HP-logo-630x630.png"
     },
     {
         "id": 7,
         "brand": "Lenovo",
+        "brand_name": "Lenovo",
         "image_name": "https://i.ibb.co/wzhbL3h/png-clipart-logo-brand-lenovo-thinkpad-ideapad-strategic-blue-text.png"
     },
     {
         "id": 8,
         "brand": "Google",
+        "brand_name": "Google",
         "image_name": "https://i.ibb.co/gyhGs4B/Colorful-google-logo-design-on-transparent-PNG-1.png"
     },
     {
         "id": 9,
         "brand": "Intel",
+        "brand_name": "Intel",
         "image_name": "https://i.ibb.co/sq12BYK/intel-blue-text-trademark-thumbnail.png"
     }
 ]
