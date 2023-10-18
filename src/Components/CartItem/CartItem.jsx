@@ -1,14 +1,19 @@
 import React from 'react'
-import { Link, useLoaderData } from 'react-router-dom'
+import { Link, useLoaderData, useNavigate } from 'react-router-dom'
 import Navbar from '../Home/Navbar/Navbar';
 
 const CartItem = () => {
 
     const cartItem = useLoaderData();
     // console.log(cartItem)
+    const navigate = useNavigate();
 
     const deleteItem = id => {
-        console.log(id)
+        fetch(`http://localhost:5000/carts/${id}`, {
+            method: "DELETE",
+        })
+            .then(res => res.json())
+            .then(data => navigate('/myCart'))
     }
 
     return (
