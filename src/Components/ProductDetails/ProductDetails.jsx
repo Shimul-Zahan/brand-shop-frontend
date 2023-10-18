@@ -7,6 +7,19 @@ const ProductDetails = () => {
     const product = useLoaderData();
     // console.log(product)
 
+    const addToCart = () => {
+        // console.log(product)
+        fetch('http://localhost:5000/carts', {
+            method: "POST",
+            headers: {
+                'content-type': 'application/json',
+            },
+            body: JSON.stringify(product),
+        })
+            .then(res => res.json())
+            .then(data => console.log(data))
+    }
+
     return (
         <div>
             <div className='bg-black'>
@@ -31,7 +44,7 @@ const ProductDetails = () => {
                     <hr />
                     <h1 className=''><strong>Details:</strong> {product?.description}</h1>
                     <div className='flex justify-start items-center gap-5 lg:pt-10'>
-                        <h1 className='rounded-full border-2 cursor-pointer border-black w-52 p-2 flex justify-center items-center'>Add to cart</h1>
+                        <h1 onClick={addToCart} className='rounded-full border-2 cursor-pointer border-black w-52 p-2 flex justify-center items-center'>Add to cart</h1>
                         <Link to='/'>
                             <h1 className='rounded-full border-2 cursor-pointer border-black w-52 p-2 flex justify-center items-center'>Back to home</h1>
                         </Link>
