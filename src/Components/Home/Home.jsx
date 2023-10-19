@@ -13,7 +13,7 @@ const Home = () => {
     // console.log(brands)
 
     return (
-        <div className=''>
+        <div className=' dark:bg-black'>
             <div className='container mx-auto'>
                 <Navbar />
             </div>

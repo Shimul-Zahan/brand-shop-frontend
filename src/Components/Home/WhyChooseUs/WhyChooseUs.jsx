@@ -6,7 +6,7 @@ const WhyChooseUs = () => {
     return (
         <div>
             <div className='container mx-auto min-h-[500px] flex flex-col-reverse lg:flex-row justify-start items-center gap-5 lg:gap-20 p-2 py-20'>
-                <h1 className="text-3xl lg:text-6xl text-black">Explore millions of offerings <br />tailored to your business <br />needs</h1>
+                <h1 className="text-3xl lg:text-6xl dark:text-white text-black">Explore millions of offerings <br />tailored to your business <br />needs</h1>
                 <div className='grid grid-cols-2 gap-5 lg:gap-20 mb-5'>
                     <div className='space-y-16'>
                         <div className='border-l-4 pl-3'>

@@ -1,17 +1,30 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import './navbar.css'
 import { MyContext } from '../../../Auth/AuthProvider'
+import { MdDarkMode } from 'react-icons/md';
+import { BsSun } from 'react-icons/bs';
 
 const Navbar = () => {
 
     const { user, logOut } = useContext(MyContext);
+    const [darkMode, setDarkMode]=useState(false)
 
     const logOutUser = () => {
         logOut()
             .then(res => console.log("Successfully login"))
             .catch(err=> console.log(err.message))
     }
+
+    useEffect(() => {
+        if (darkMode) {
+            document.documentElement.classList.add('dark')
+        } else {
+            document.documentElement.classList.remove('dark')
+        }
+    }, [darkMode])
+
+    // console.log(darkMode)
 
     return (
         <div className="navbar container py-8 mx-auto z-10 relative">
@@ -39,7 +52,18 @@ const Navbar = () => {
                     <li><NavLink to='/myCart'>My Cart</NavLink></li>
                 </ul>
             </div>
-            <div className="navbar-end space-x-5">
+            <div className="navbar-end lg:space-x-5">
+                
+
+                <div onClick={()=> setDarkMode(!darkMode)}>
+                    <h1 className='text-lg lg:text-xl text-white font-thin py-1 px-4 cursor-pointer'>
+                        {
+                            darkMode ? <BsSun /> : <MdDarkMode />
+                        }
+                    </h1>
+                </div>
+
+
                 <div>
                     <h1 className="hidden lg:block text-xl text-white">{ user?.displayName }</h1>
                 </div>

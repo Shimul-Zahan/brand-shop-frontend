@@ -7,7 +7,7 @@ const Brand = ({ brands }) => {
 
     return (
         <div className='container mx-auto py-20'>
-            <h1 className='text-5xl font-bold text-center'>Our Selling Brands</h1>
+            <h1 className='text-5xl font-bold text-center dark:text-white'>Our Selling Brands</h1>
             <div className='flex justify-center items-center'>
                 <div className='py-20 grid grid-cols-1 lg:grid-cols-4 gap-20'>
                     {
