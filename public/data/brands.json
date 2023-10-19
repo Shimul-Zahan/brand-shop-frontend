@@ -3,48 +3,104 @@
         "id": 1,
         "brand": "Apple",
         "brand_name": "Apple",
-        "image_name": "https://i.ibb.co/PCRrBKL/Apple-Logo-1977.png"
+        "image_name": "https://i.ibb.co/PCRrBKL/Apple-Logo-1977.png",
+        "sliderImage" :[
+            {
+                "image1": "https://i.ibb.co/MDFf9r5/o1.png",
+                "image2": "https://i.ibb.co/G213PbL/download.jpg",
+                "image3": "https://i.ibb.co/whWvmc9/1627992596-vijay-sales-apple-1200x800.jpg"
+            }
+        ]
     },
     {
         "id": 2,
         "brand": "Samsung",
         "brand_name": "Samsung",
-        "image_name": "https://i.ibb.co/0GD6GRD/samsung-logo-PNG12.png"
+        "image_name": "https://i.ibb.co/0GD6GRD/samsung-logo-PNG12.png",
+        "sliderImage": [
+            {
+                "image1": "https://i.ibb.co/DzjwMMH/samsung-shopee-super-brand-day-2.png",
+                "image2": "https://i.ibb.co/MGgRkJ2/Master-banner-Horizontal.jpg",
+                "image3": "https://i.ibb.co/5vcDcnh/7d77568035072f2d3377c49970afb431.jpg"
+            }
+        ]
     },
     {
         "id": 3,
         "brand": "Sony",
         "brand_name": "Sony",
-        "image_name": "https://i.ibb.co/fnmb4Rg/Sony-Logo-1957.png"
+        "image_name": "https://i.ibb.co/fnmb4Rg/Sony-Logo-1957.png",
+        "sliderImage": [
+            {
+                "image1": "https://i.ibb.co/VCKYXQP/soundbar-offer-banner.jpg",
+                "image2": "https://i.ibb.co/44r7G1s/sonysale.jpg",
+                "image3": "https://i.ibb.co/ctC52SM/Sony-India-Christmas-New-year-offers-1024x392.jpg"
+            }
+        ]
     },
     {
         "id": 4,
         "brand": "Microsoft",
         "brand_name": "Microsoft",
-        "image_name": "https://i.ibb.co/Kw1yvbm/microsoft-logo-png-2395.png"
+        "image_name": "https://i.ibb.co/Kw1yvbm/microsoft-logo-png-2395.png",
+        "sliderImage": [
+            {
+                "image1": "https://i.ibb.co/N7MsKFg/1666959321362.jpg",
+                "image2": "https://i.ibb.co/mvnYmRR/03.png",
+                "image3": "https://i.ibb.co/CJgf4Gx/02.png"
+            }
+        ]
     },
     {
         "id": 6,
         "brand": "HP",
         "brand_name": "HP",
-        "image_name": "https://i.ibb.co/4Rthj2k/HP-logo-630x630.png"
+        "image_name": "https://i.ibb.co/4Rthj2k/HP-logo-630x630.png",
+        "sliderImage": [
+            {
+                "image1": "https://i.ibb.co/5WpPXyt/01.png",
+                "image2": "https://i.ibb.co/h1sYGGS/hpshopping-discount-codes.jpg",
+                "image3": "https://i.ibb.co/kmgZ780/hpshopping-coupons.jpg"
+            }
+        ]
     },
     {
         "id": 7,
         "brand": "Lenovo",
         "brand_name": "Lenovo",
-        "image_name": "https://i.ibb.co/wzhbL3h/png-clipart-logo-brand-lenovo-thinkpad-ideapad-strategic-blue-text.png"
+        "image_name": "https://i.ibb.co/wzhbL3h/png-clipart-logo-brand-lenovo-thinkpad-ideapad-strategic-blue-text.png",
+        "sliderImage": [
+            {
+                "image1": "https://i.ibb.co/vdt3MYg/download-1.jpg",
+                "image2": "https://i.ibb.co/31c8HBk/images.jpg",
+                "image3": "https://i.ibb.co/m63zVWL/download.jpg"
+            }
+        ]
     },
     {
         "id": 8,
         "brand": "Google",
         "brand_name": "Google",
-        "image_name": "https://i.ibb.co/gyhGs4B/Colorful-google-logo-design-on-transparent-PNG-1.png"
+        "image_name": "https://i.ibb.co/gyhGs4B/Colorful-google-logo-design-on-transparent-PNG-1.png",
+        "sliderImage": [
+            {
+                "image1": "https://i.ibb.co/RYy1RYb/maxresdefault.jpg",
+                "image2": "https://i.ibb.co/wQvHhS3/auto-draft-1319.jpg",
+                "image3": "https://i.ibb.co/5jGXGy1/indi01.png"
+            }
+        ]
     },
     {
         "id": 9,
         "brand": "Intel",
         "brand_name": "Intel",
-        "image_name": "https://i.ibb.co/sq12BYK/intel-blue-text-trademark-thumbnail.png"
+        "image_name": "https://i.ibb.co/sq12BYK/intel-blue-text-trademark-thumbnail.png",
+        "sliderImage": [
+            {
+                "image1": "https://i.ibb.co/7Nn4J88/main-banner-e-4x.jpg",
+                "image2": "https://i.ibb.co/CB34QKG/76bfd11f-f5b2-48c1-817c-ff1b991a63c4-CR0-0-1940-600-PT0-SX970-V1.jpg",
+                "image3": "https://i.ibb.co/D79MjFK/01.png"
+            }
+        ]
     }
 ]

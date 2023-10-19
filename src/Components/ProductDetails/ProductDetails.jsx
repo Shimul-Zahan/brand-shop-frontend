@@ -10,13 +10,22 @@ const ProductDetails = () => {
     // console.log(product)
 
     const addToCart = () => {
+
+        const name = product.name
+        const image = product.image
+        const rating = product.rating
+        const brand_name = product.brand_name
+        const price = product.price
+
+        const selectItem = {name, image, rating, brand_name, price}
+
         // console.log(product)
         fetch('http://localhost:5000/carts', {
             method: "POST",
             headers: {
                 'content-type': 'application/json',
             },
-            body: JSON.stringify(product),
+            body: JSON.stringify(selectItem),
         })
             .then(res => res.json())
             .then(data => 

@@ -5,6 +5,7 @@ import { useLoaderData } from 'react-router-dom'
 import Trade from './Trade/Trade'
 import WhyChooseUs from './WhyChooseUs/WhyChooseUs'
 import Navbar from './Navbar/Navbar'
+import Slider from '../Slider/Slider'
 
 const Home = () => {
 

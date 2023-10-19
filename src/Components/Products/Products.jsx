@@ -1,23 +1,30 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Navbar from '../Home/Navbar/Navbar'
-import { Link, useLoaderData } from 'react-router-dom'
+import { Link, useLoaderData, useParams } from 'react-router-dom'
 import { BsCheckLg } from 'react-icons/bs';
+import Slider from '../Slider/Slider';
 
 const Products = () => {
 
     const data = useLoaderData();
-    // console.log(data);
+    const id = useParams();
+    
 
     return (
         <div>
             <div className='bg-black'>
                 <Navbar />
             </div>
+            <div className='bg-base-200'>
+                <div className='container mx-auto'>
+                    <Slider id={id} />
+                </div>
+            </div>
             <div className='container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 py-10 min-h-screen'>
                 {
                     data.length > 0 ? 
                         data.map(product => 
-                            <div key={product._id} className="block rounded-lg p-4 shadow-sm shadow-indigo-100">
+                            <div key={product._id} className="block rounded-lg p-4 shadow-xl h-[500px] shadow-indigo-100">
                                 <img
                                     alt="Home"
                                     src={product?.image}
