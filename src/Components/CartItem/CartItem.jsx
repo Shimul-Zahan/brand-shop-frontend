@@ -20,7 +20,7 @@ const CartItem = () => {
             confirmButtonText: 'Yes, delete it!'
         }).then((result) => {
             if (result.isConfirmed) {
-                fetch(`http://localhost:5000/carts/${id}`, {
+                fetch(`https://brand-shop-zeta.vercel.app/carts/${id}`, {
                     method: "DELETE",
                 })
                     .then(res => res.json())
@@ -37,7 +37,7 @@ const CartItem = () => {
 
     return (
         <div>
-            <div className='bg-black'>
+            <div className='bg-[#4b2b1f]'>
                 <div className='container mx-auto'>
                     <Navbar />
                 </div>

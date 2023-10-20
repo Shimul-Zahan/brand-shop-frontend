@@ -12,7 +12,7 @@ const Products = () => {
 
     return (
         <div>
-            <div className='bg-black'>
+            <div className='bg-[#4b2b1f]'>
                 <Navbar />
             </div>
             <div className=''>

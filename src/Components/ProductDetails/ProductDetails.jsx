@@ -20,7 +20,7 @@ const ProductDetails = () => {
         const selectItem = {name, image, rating, brand_name, price}
 
         // console.log(product)
-        fetch('http://localhost:5000/carts', {
+        fetch('https://brand-shop-zeta.vercel.app/carts', {
             method: "POST",
             headers: {
                 'content-type': 'application/json',
@@ -39,7 +39,7 @@ const ProductDetails = () => {
 
     return (
         <div>
-            <div className='bg-black'>
+            <div className='bg-[#4b2b1f]'>
                 <div className='container mx-auto'>
                     <Navbar />
                 </div>

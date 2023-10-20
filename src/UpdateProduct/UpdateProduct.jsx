@@ -19,11 +19,10 @@ const UpdateProduct = () => {
         const rating = form.rating.value;
         const category = form.category.value;
         const brand_name = form.brand_name.value.toLowerCase();
-        const description = form.description.value;
 
         const updateProduct = { name, image, price, brand_name, category, rating, description }
 
-        fetch(`http://localhost:5000/update/${data._id}`, {
+        fetch(`https://brand-shop-zeta.vercel.app/update/${data._id}`, {
             method: "PUT",
             headers: {
                 'content-type': 'application/json',
@@ -48,9 +47,9 @@ const UpdateProduct = () => {
             <div className='bg-[#4b2b1f] mb-10'>
                 <Navbar />
             </div>
-            <div className='container mx-auto mb-10 bg-[#FF6617] p-4 lg:p-20 rounded-lg bg-blend-overlay bg-opacity-70'>
+            <div className='container mx-auto mb-10 bg-[#4b2b1f] p-4 lg:p-20 rounded-lg bg-blend-overlay bg-opacity-70'>
                 <div className='text-center mb-10'>
-                    <h1 className='text-5xl font-thin font-primary text-[#374151] drop-shadow-2xl'>Update Existing Product</h1>
+                    <h1 className='text-5xl font-thin font-primary text-[white] drop-shadow-2xl'>Update Existing Product</h1>
                     <p className='text-lg font-thin mt-4'></p>
                 </div>
                 <form onSubmit={updateProduct}>
@@ -80,12 +79,8 @@ const UpdateProduct = () => {
                             <input type="text" name='rating' defaultValue={data?.rating} placeholder="Enter rating" className="input input-bordered w-full border-none" required />
                         </div>
                     </div>
-                    <div className='space-y-4 mt-6'>
-                        <label className='text-xl font-bold'>Descrtption</label>
-                        <input type="text" name='description' defaultValue={data?.description} placeholder="Enter product short description" className="input input-bordered w-full border-none " required />
-                    </div>
                     <div className='space-y-4 mt-10'>
-                        <input type="submit" value="Update Product" className="input capitalize btn text-2xl font-thin input-bordered w-full font-primary bg-[#FF6617] hover:bg-[#FF6617] border-black" />
+                        <input type="submit" value="Update Product" className="input text-white capitalize btn text-2xl font-thin input-bordered w-full font-primary bg-[#4b2b1f] hover:bg-[#4b2b1f] border-black" />
                     </div>
                 </form>
             </div>

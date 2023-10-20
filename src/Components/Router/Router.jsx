@@ -32,22 +32,22 @@ const router = createBrowserRouter([
             {
                 path: '/brand/:brand_name',
                 element: <Products />,
-                loader: ({ params }) =>fetch(`http://localhost:5000/brand/${params.brand_name}`)
+                loader: ({ params }) =>fetch(`https://brand-shop-zeta.vercel.app/brand/${params.brand_name}`)
             },
             {
                 path: '/details/:id',
-                element: <ProductDetails />,
-                loader: ({ params }) => fetch(`http://localhost:5000/details/${params.id}`)
+                element: <Private><ProductDetails /></Private>,
+                loader: ({ params }) => fetch(`https://brand-shop-zeta.vercel.app/details/${params.id}`)
             },
             {
                 path: '/update/:id',
                 element: <Private><UpdateProduct /></Private>,
-                loader: ({ params }) => fetch(`http://localhost:5000/update/${params.id}`)
+                loader: ({ params }) => fetch(`https://brand-shop-zeta.vercel.app/update/${params.id}`)
             },
             {
                 path: '/myCart',
                 element: <Private><CartItem /></Private>,
-                loader: () => fetch('http://localhost:5000/carts')
+                loader: () => fetch('https://brand-shop-zeta.vercel.app/carts')
             },
             {
                 path: '/login',

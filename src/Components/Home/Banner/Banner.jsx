@@ -23,7 +23,7 @@ const Banner = () => {
                       <BsSearch className='text-2xl text-white font-thin' />
                   </button>
               </div>
-              <p className='text-white text-sm font-thin md:text-xl text-center md:max-w-[750px]'>At <span className='text-white font-bold'>AlgoWebBot</span>, we are passionate about creating unforgettable moments in the world of technology and gaming. Whether you're an avid gamer, a tech enthusiast, or a visionary developer, we've got something extraordinary for you.</p>
+              <p className='text-white text-sm font-thin md:text-xl text-center md:max-w-[750px]'>At <span className='text-white font-bold'>Unity Shop</span>, we are passionate about creating unforgettable moments in the world of technology and gaming. Whether you're an avid gamer, a tech enthusiast, or a visionary developer, we've got something extraordinary for you.</p>
 
               <div className='pt-8'>
                   <Link to='/contact'>

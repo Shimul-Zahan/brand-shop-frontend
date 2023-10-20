@@ -38,7 +38,7 @@ const Login = () => {
 
     return (
         <div>
-            <div className='bg-black'>
+            <div className='bg-[#4b2b1f]'>
                 <Navbar />
             </div>
             <div className='container mx-auto h-[760px] pt-20'>
