@@ -8,7 +8,7 @@ import { BsSun } from 'react-icons/bs';
 const Navbar = () => {
 
     const { user, logOut } = useContext(MyContext);
-    const [darkMode, setDarkMode]=useState(false)
+    const [darkMode, setDarkMode] = useState(false);
 
     const logOutUser = () => {
         logOut()

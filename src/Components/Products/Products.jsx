@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Navbar from '../Home/Navbar/Navbar'
-import { Link, useLoaderData, useParams } from 'react-router-dom'
+import { Link, useLoaderData, useNavigate, useParams } from 'react-router-dom'
 import { BsCheckLg } from 'react-icons/bs';
 import Slider from '../Slider/Slider';
 
@@ -15,8 +15,8 @@ const Products = () => {
             <div className='bg-black'>
                 <Navbar />
             </div>
-            <div className='bg-base-200'>
-                <div className='container mx-auto'>
+            <div className=''>
+                <div className=''>
                     <Slider id={id} />
                 </div>
             </div>
@@ -36,11 +36,15 @@ const Products = () => {
                                         <div className='flex justify-between items-center'>
                                             {/* <dt className="sr-only">Price</dt> */}
                                             <h1 className="text-lg text-gray-500">{product?.price}৳</h1>
-                                            <Link to={`/details/${product._id}`} className='flex justify-end items-center gap-2'>
-                                                <div className="mt-1.5 sm:mt-0 border-2 border-black py-1 px-2 rounded-full hover:bg-[red] hover:text-white">
-                                                    <p className="font-medium text-lg">Details</p>
-                                                </div>
-                                            </Link>
+                                            <div className='flex justify-center items-center gap-2'>
+                                                <Link to={`/details/${product._id}`} className='flex justify-end items-center gap-2'>
+                                                    <div className="mt-1.5 sm:mt-0 border-2 border-black py-1 px-2 rounded-full">
+                                                        <p className="font-medium text-lg">Details</p>
+                                                    </div>
+                                                </Link><Link to={`/update/${product?._id}`}>
+                                                    <h1 className='rounded-full border-2 cursor-pointer border-black px-2 py-1 flex justify-center items-center'>Update Product</h1>
+                                                </Link>
+                                            </div>
                                         </div>
 
                                         <div>

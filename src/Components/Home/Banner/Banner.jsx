@@ -1,5 +1,5 @@
 import React from 'react'
-import BgImage from '/assets/banner-image/banner.png'
+import BgImage from '/assets/banner-image/01.jpg'
 // import Marquee from "react-fast-marquee";
 import { Link } from 'react-router-dom';
 import { BsTelephoneFill, BsSearch } from 'react-icons/bs';

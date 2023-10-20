@@ -1,13 +1,14 @@
 import React from 'react'
 import Navbar from '../Components/Home/Navbar/Navbar'
 import Swal from 'sweetalert2'
-import { useLoaderData, useParams } from 'react-router-dom'
+import { useLoaderData, useNavigate, useParams } from 'react-router-dom'
 
 const UpdateProduct = () => {
 
     // const id = useParams();
     const data = useLoaderData();
-    console.log(data)
+    // console.log(data)
+    const navigate = useNavigate()
 
     const updateProduct = e => {
         e.preventDefault();
@@ -37,6 +38,7 @@ const UpdateProduct = () => {
                     'Product added successfully!',
                     'success'
                 )
+                navigate('/')
             }
         )
     }

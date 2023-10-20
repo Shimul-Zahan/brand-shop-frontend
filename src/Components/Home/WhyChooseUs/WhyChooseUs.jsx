@@ -30,9 +30,9 @@ const WhyChooseUs = () => {
                     </div>
                 </div>
             </div>
-            <div className='bg-[#f7f2f0] lg:min-h-screen '>
+            <div className='bg-[#f7f2f0] lg:min-h-screen dark:bg-gray-900 '>
                 <div className='container mx-auto py-20'>
-                    <h1 className='text-3xl lg:text-7xl text-center mb-10'>Personalize your trading experience with curated benefits</h1>
+                    <h1 className='text-3xl lg:text-7xl text-center mb-10 dark:text-white'>Personalize your trading experience with curated benefits</h1>
 
 
                     <div className="carousel w-full">

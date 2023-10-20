@@ -98,9 +98,6 @@ const ProductDetails = () => {
                     </div>
                     <div className='flex justify-start items-center gap-5 lg:pt-10'>
                         <h1 onClick={addToCart} className='rounded-full border-2 cursor-pointer border-black w-52 p-2 flex justify-center items-center'>Add to cart</h1>
-                        <Link to={`/update/${product?._id}`}>
-                            <h1 className='rounded-full border-2 cursor-pointer border-black w-52 p-2 flex justify-center items-center'>Update Product</h1>
-                        </Link>
                     </div>
                 </div>
             </div>
