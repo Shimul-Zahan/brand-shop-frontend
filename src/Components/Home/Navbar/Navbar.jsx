@@ -30,7 +30,7 @@ const Navbar = () => {
         <div className="navbar container py-8 mx-auto z-10 relative">
             <div className="navbar-start">
                 <div className='flex justify-start items-center gap-2'>
-                    <img src="/assets/logo/Poundit_e-commerce_website_Logo.svg.png" className='h-10' />
+                    <img src="/assets/logo/Poundit_e-commerce_website_Logo.svg.png" className='h-10 hidden lg:block' />
                     <Link to='/' className="hidden lg:block text-3xl text-white">Unity Shop</Link>
                 </div>
                 <div className="lg:hidden dropdown">
