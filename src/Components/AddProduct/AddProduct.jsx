@@ -63,7 +63,16 @@ const AddProduct = () => {
                       </div>
                       <div className='space-y-4'>
                           <label className='text-xl font-bold'>Brand Name</label>
-                          <input type="text" name='brand_name' placeholder="Enter brand name" className="input input-bordered w-full border-none" required />
+                          <select name="brand_name" type="text" className='select text-gray-500 select-bordered w-full border-none'>
+                              <option>Apple</option>
+                              <option>Samsung</option>
+                              <option>Microsoft</option>
+                              <option>Google</option>
+                              <option>HP</option>
+                              <option>Intel</option>
+                              <option>Sony</option>
+                              <option>Lenovo</option>
+                          </select>
                       </div>
                       <div className='space-y-4'>
                           <label className='text-xl font-bold'>Price</label>
