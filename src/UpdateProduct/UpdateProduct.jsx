@@ -8,7 +8,7 @@ const UpdateProduct = () => {
     // const id = useParams();
     const data = useLoaderData();
     // console.log(data)
-    const navigate = useNavigate()
+    // const navigate = useNavigate()
 
     const updateProduct = e => {
         e.preventDefault();
@@ -37,7 +37,6 @@ const UpdateProduct = () => {
                     'Product Update successfully!',
                     'success'
                 )
-                navigate('/')
             }
         )
     }
