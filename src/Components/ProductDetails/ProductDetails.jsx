@@ -31,7 +31,7 @@ const ProductDetails = () => {
             .then(data => 
                 Swal.fire(
                     'Good job!',
-                    'You clicked the button!',
+                    'You product add to cart!',
                     'success'
                 )    
             )
