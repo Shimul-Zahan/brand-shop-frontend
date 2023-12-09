@@ -13,6 +13,6 @@ Description: This is a e-commerce website. Here the products of various brands h
 # Web Tools
 .Git .Github .firebase .Vervcel
 
-# Name : Brand Shop
+# Name : Unity Shop
 
 # Live link: https://brand-shop-3a60e.web.app/
